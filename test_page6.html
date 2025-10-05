@@ -20,7 +20,7 @@
         
         // Test the API call
         if (diagnosisId) {
-            fetch(`http://localhost:8220/diagnosis/${diagnosisId}/`, {
+            fetch(`https://agricopilot.azurewebsites.net/diagnosis/${diagnosisId}/`, {
                 method: 'GET'
             })
             .then(response => response.json())
